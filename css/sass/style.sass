@@ -2,7 +2,7 @@
 
 @import "variables"
 @import "utilities"
-@include reset 
+@include reset
 
 .main-banner
   background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), url('../img/office.jpg')
@@ -10,8 +10,8 @@
   background-size: cover
   background-position: center
 
-  @include mobile 
-  height: 100vh    
+  @include mobile
+  height: 100vh
 
 .nav-container
   display: flex
@@ -20,281 +20,274 @@
   top: 0
   left: 0
   width: 100%
-  padding: 1.5rem 2rem 
+  padding: 1.5rem 2rem
   background-color: $black
   z-index: 1000
   @include mobile
-    padding: 1rem
+  padding: 1rem
   .brand
     color: $light-color
     @include f-size(32)
     @include main-hover
 
   &-navbar
-      display: flex
-      align-items: center
-      height: 100%
+    display: flex
+    align-items: center
+    height: 100%
 
-      li 
-        margin: 5px 10px
+    li
+      margin: 5px 10px
 
-        a 
-          color: $light-color
-          @include main-hover
+      a
+        color: $light-color
+        @include main-hover
 
-  .fas.fa-bars
+  .btn-mobile
     @include f-size(32)
     color: $light-color
     display: none
 
-    @include mobile 
-      display: block 
+    @include mobile
+    display: block
 
-  nav 
-    @include mobile 
+  nav
+    @include mobile
       display: none
-  
-    &.active 
-      display: flex 
+
+    &.active
+      display: flex
       position: absolute
       top: 4rem
       right: 0
-      background-color: black 
+      background-color: black
 
       ul
-        display: flex 
+        display: flex
         flex-direction: column
-        li 
+        li
           margin-top: 1rem
-          .btn 
-            background: none  
-            border: none 
-            text-transform: capitalize 
-
-    
+          .btn
+            background: none
+            border: none
+            text-transform: capitalize
 
 .title-container
   color: $light-color
   display: flex
   flex-direction: column
   align-items: center
-  justify-content: center 
+  justify-content: center
   height: 100%
 
-  @include mobile 
+  @include mobile
     text-align: center
     padding: 2rem
 
-  h2 
+  h2
     @include f-size(48)
 
-    @include mobile 
-      @include f-size(36) 
-    margin-top: 4rem
-    @extend %title-text-shadow
-  h1 
+    @include mobile
+      @include f-size(36)
+      margin-top: 4rem
+     
+  h1
     @include f-size(64)
-    @include mobile 
-      @include f-size(48)
-    margin-top: 1rem 
+    @include mobile
+    @include f-size(48)
+    margin-top: 1rem
     @extend %title-text-shadow
 
-.services-container 
-  text-align: center 
+.services-container
+  text-align: center
   padding: 2rem
-  margin-bottom: 2rem 
+  margin-bottom: 2rem
   h2
-    @extend %section-title 
+    @extend %section-title
 
   .services-card-container
-    display: flex 
-    flex-wrap: wrap 
-    justify-content: space-around 
-    padding: 2rem 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    padding: 2rem
 
     @include mobile
       padding: 2rem 0
 
-    .services-card 
-      width: 30% 
-      margin: 1% 
-      padding: 2rem 
-      border: 1px solid $border-color 
-      transition: .3s 
+    .services-card
+      width: 30%
+      margin: 1%
+      padding: 2rem
+      border: 1px solid $border-color
+      transition: .3s
 
       @include mobile
-        width: 100% 
+        width: 100%
         margin-bottom: 2rem
 
-      i   
-        color: $primary-color 
+      i
+        color: $primary-color
         @include f-size(64)
-        display: block 
-        margin-top: 1rem 
+        display: block
+        margin-top: 1rem
         margin-bottom: 1.5rem
 
-      h3 
-        @include f-size(24) 
-      p 
+      h3
+        @include f-size(24)
+      p
         color: $text-color
-        @include f-size(16) 
-      &:hover 
-        border: transparent 
-        box-shadow: 0 1px 10px $border-color  
+        @include f-size(16)
+      &:hover
+        border: transparent
+        box-shadow: 0 1px 10px $border-color
 
-
-.jobs-container 
-  background-color: $secondary-color 
-  padding: 3rem 
+.jobs-container
+  background-color: $secondary-color
+  padding: 3rem
 
   @include mobile
     padding: 2rem
 
-  h2 
-    @extend %section-title  
-      
-  .jobs-list 
-    display: flex 
-    padding: 2rem 0 
+  h2
+    @extend %section-title
+
+  .jobs-list
+    display: flex
+    padding: 2rem 0
     @include mobile
-      flex-direction: column 
+      flex-direction: column
 
-    .first-job 
-      width: 30% 
-      height: 415px 
+    .first-job
+      width: 30%
+      height: 415px
       margin: 0 1%
-      background-image: url('../img/job1.jpg') 
-      position: relative 
-      cursor: pointer 
-      transition: .5s 
-      @extend %center-bg 
-      @extend %card-hover 
+      background-image: url('../img/job1.jpg')
+      position: relative
+      cursor: pointer
+      transition: .5s
+      @extend %center-bg
+      @extend %card-hover
 
-      @include mobile 
-        @include card-mobile 
+      @include mobile
+        @include card-mobile
 
-
-    .other-jobs-container 
+    .other-jobs-container
       display: flex
-      flex-wrap: wrap 
+      flex-wrap: wrap
       width: 68%
 
-      @include mobile 
-        width: 100% 
-        flex-direction: column 
+      @include mobile
+        width: 100%
+        flex-direction: column
 
-      .job-card 
-        width: 46% 
-        height: 200px 
-        position: relative 
-        cursor: pointer  
-        margin-bottom: 15px 
-        margin-right: 15px 
+      .job-card
+        width: 46%
+        height: 200px
+        position: relative
+        cursor: pointer
+        margin-bottom: 15px
+        margin-right: 15px
 
-        @extend %center-bg 
+        @extend %center-bg
         @extend  %card-hover
 
-        @include mobile 
+        @include mobile
           @include card-mobile
 
-      $i: 1
-      @while $i <= 5 
-        #job#{$i}
-          background-image: url('../img/job#{$i}.jpg')
-            $i: $i + 1
+          $i: 1
+          @while $i <= 5
+            #job#{$i}
+              background-image: url('../img/job#{$i}.jpg')
+              $i: $i + 1
 
-    .job-card-cover 
-      position: absolute 
-      top: 0 
+    .job-card-cover
+      position: absolute
+      top: 0
       left: 0
-      width: 100% 
-      height: 100% 
-      padding-top: 1rem 
-      background-color: rgba(0,0,0, .6) 
+      width: 100%
+      height: 100%
+      padding-top: 1rem
+      background-color: rgba(0,0,0, .6)
       border: 3px solid $primary-color
       transition: all .3s ease-in-out
 
-    .job-card-title 
-      text-align: center 
-      color: $light-color 
-      @include f-size(36) 
-      font-weight: bold 
+    .job-card-title
+      text-align: center
+      color: $light-color
+      @include f-size(36)
+      font-weight: bold
 
-    .job-card-description 
-      text-align: center 
-      color: $light-color 
-      padding: 1rem 
+    .job-card-description
+      text-align: center
+      color: $light-color
+      padding: 1rem
       @include f-size(16)
 
-footer 
-  background-color: $footer-bg 
-  color: $text-color 
-  padding: 3rem 2rem 
+footer
+  background-color: $footer-bg
+  color: $text-color
+  padding: 3rem 2rem
 
-  .footer-container 
-    max-width: 1200px 
-    margin: 0 auto 
-    display: flex 
+  .footer-container
+    max-width: 1200px
+    margin: 0 auto
+    display: flex
     flex-wrap: wrap
 
     @include mobile
-       max-width: 100% 
-       flex-direction: column
+      max-width: 100%
+      flex-direction: column
 
-    .footer-title 
-      color: $light-color 
-      font-weight: bold   
-      margin-bottom: 1rem 
-       
+    .footer-title
+      color: $light-color
+      font-weight: bold
+      margin-bottom: 1rem
 
-  .footer-desk-container, .footer-links-container 
+  .footer-desk-container, .footer-links-container
     width: 50%
-    @include mobile 
-      width: 100% 
-      margin-bottom: 2rem 
+    @include mobile
+      width: 100%
+      margin-bottom: 2rem
       text-align: center
 
-  .footer-desk-container 
-    h3 
+  .footer-desk-container
+    h3
       margin-bottom: 1rem
       @include f-size(36)
-    p 
+    p
       width: 80%
       @include f-size(16)
 
-      @include mobile 
-        width: 100% 
+      @include mobile
+        width: 100%
 
   .footer-links-container
-    display: flex 
+    display: flex
     @include mobile
-      flex-direction: column 
-    
+      flex-direction: column
+
     &-list
       padding: 0 1rem
       @include f-size(16)
 
-      @include mobile   
+      @include mobile
         margin-block-end: 2rem
 
-      li 
-        margin-block-end: .5rem 
+      li
+        margin-block-end: .5rem
 
-        a 
-          color: $text-color 
-          transition: .3s 
+        a
+          color: $text-color
+          transition: .3s
 
-          &:hover 
+          &:hover
             color: $primary-color
 
-  .footer-copy-container 
-    width: 100% 
+  .footer-copy-container
+    width: 100%
     margin-top: 3rem
-    @include mobile 
-        text-align: center 
-        margin-top: 1.5rem
-    
-    p 
-      @include f-size(16)
+    @include mobile
+      text-align: center
+      margin-top: 1.5rem
 
-      
+    p
+      @include f-size(16)
