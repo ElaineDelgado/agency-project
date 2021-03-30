@@ -11,7 +11,7 @@
   background-position: center
 
   @include mobile
-  height: 100vh
+    height: 100vh
 
 .nav-container
   display: flex
@@ -24,7 +24,7 @@
   background-color: $black
   z-index: 1000
   @include mobile
-  padding: 1rem
+    padding: 1rem
   .brand
     color: $light-color
     @include f-size(32)
@@ -47,8 +47,7 @@
     color: $light-color
     display: none
     @include mobile
-      display: block 
-    
+      display: block
 
   nav
     @include mobile
@@ -92,10 +91,11 @@
 
   h1
     @include f-size(64)
-    @include mobile
-    @include f-size(48)
-    margin-top: 1rem
     @extend %title-text-shadow
+    @include mobile
+      @include f-size(48)
+      margin-top: 1rem
+      
 
 .services-container
   text-align: center
@@ -193,11 +193,11 @@
         @include mobile
           @include card-mobile
 
-          $i: 1
-          @while $i <= 5
-            #job#{$i}
-              background-image: url('../img/job#{$i}.jpg')
-              $i: $i + 1
+      $i: 2
+      @while $i <= 5
+        #job#{$i}
+          background-image: url('../img/job#{$i}.jpg')
+        $i: $i + 1
 
     .job-card-cover
       position: absolute
@@ -291,3 +291,11 @@ footer
 
     p
       @include f-size(16)
+
+
+  
+  
+  
+      
+
+      
