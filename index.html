@@ -1,194 +1,248 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agency</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Agency</title>
 
-  <!-- Fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
 
-  <!-- Font awsome-->
-  <script src="https://kit.fontawesome.com/c2aa783bee.js" crossorigin="anonymous"></script>
+        <!-- Font awsome-->
+        <script
+            src="https://kit.fontawesome.com/c2aa783bee.js"
+            crossorigin="anonymous"
+        ></script>
 
-  <!-- CSS-->
-  <link rel="stylesheet" href="css/style.css">
+        <!-- CSS-->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-  
-</head>
+    <body>
+        <!-- Cabeçalho-->
+        <header class="main-banner">
+            <div class="nav-container">
+                <a href="#" class="brand"><i class="fas fa-brain">Agency</i></a>
+                <nav class="nav-bar">
+                    <ul class="nav-container-navbar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#" class="btn btn-primary">Entrar</a></li>
+                        <li><a href="#" class="btn">Registrar</a></li>
+                    </ul>
+                </nav>
+                <a class="btn-mobile" href=""><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="title-container">
+                <h2>Nós desenvolvemos</h2>
+                <h1>Poderosas experiências</h1>
+                <a href="#" class="btn btn-primary btn-rounded"
+                    >Fazer Orçamento</a
+                >
+            </div>
+        </header>
+        <!-- Serviços -->
+        <main class="services-container">
+            <h2>O que fazemos</h2>
+            <div class="services-card-container">
+                <div class="services-card">
+                    <i class="fab fa-buffer"></i>
+                    <h3>Desenvolvimento Fullsatck</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Cupiditate eius ea eligendi placeat rerum
+                        reiciendis esse totam quaerat molestiae, et illum.
+                        Consequuntur quibusdam consequatur neque exercitationem
+                        corrupti officiis .
+                    </p>
+                </div>
+                <div class="services-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Sites leves e rápidos</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Cupiditate eius ea eligendi placeat rerum
+                        reiciendis esse totam quaerat molestiae, et illum.
+                        Consequuntur quibusdam consequatur neque exercitationem
+                        corrupti officiis .
+                    </p>
+                </div>
+                <div class="services-card">
+                    <i class="fas fa-cart-plus"></i>
+                    <h3>E-commerce</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Cupiditate eius ea eligendi placeat rerum
+                        reiciendis esse totam quaerat molestiae, et illum.
+                        Consequuntur quibusdam consequatur neque exercitationem
+                        corrupti officiis .
+                    </p>
+                </div>
+                <div class="services-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>SEO</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Cupiditate eius ea eligendi placeat rerum
+                        reiciendis esse totam quaerat molestiae, et illum.
+                        Consequuntur quibusdam consequatur neque exercitationem
+                        corrupti officiis .
+                    </p>
+                </div>
+                <div class="services-card">
+                    <i class="fas fa-chess-pawn"></i>
+                    <h3>Estratégia de Marketing</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Cupiditate eius ea eligendi placeat rerum
+                        reiciendis esse totam quaerat molestiae, et illum.
+                        Consequuntur quibusdam consequatur neque exercitationem
+                        corrupti officiis .
+                    </p>
+                </div>
+                <div class="services-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Hospedagem AWS/Azure</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Cupiditate eius ea eligendi placeat rerum
+                        reiciendis esse totam quaerat molestiae, et illum.
+                        Consequuntur quibusdam consequatur neque exercitationem
+                        corrupti officiis .
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="btn btn-primary btn-rounded"
+                >Veja todos os serviços</a
+            >
+        </main>
 
-<body>
+        <!-- Jobs-->
+        <section class="jobs-container">
+            <h2>Algum de nossos trabalhos</h2>
+            <div class="jobs-list">
+                <div class="first-job" id="job1">
+                    <div class="job-card-cover">
+                        <p class="job-card-title">Projeto 1</p>
+                        <p class="job-card-description">
+                            Lorem ipsum dolor sit amet consectetur quaerat
+                            molestiae, et illum. Consequuntur quibusdam
+                            consequatur neque exercitationem corrupti
+                            adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="other-jobs-container">
+                    <div class="job-card" id="job2">
+                        <div class="job-card-cover">
+                            <p class="job-card-title">Projeto 2</p>
+                            <p class="job-card-description">
+                                Quaerat molestiae, et illum. Consequuntur
+                                quibusdam consequatur neque exercitationem
+                                corruptiVel architecto harum hic exercitationem
+                                molestiae consequatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-card" id="job3">
+                        <div class="job-card-cover">
+                            <p class="job-card-title">Projeto 3</p>
+                            <p class="job-card-description">
+                                Quaerat molestiae, et illum. Consequuntur
+                                quibusdam consequatur neque exercitationem
+                                corruptiVel architecto harum hic exercitationem
+                                molestiae consequatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-card" id="job4">
+                        <div class="job-card-cover">
+                            <p class="job-card-title">Projeto 4</p>
+                            <p class="job-card-description">
+                                Quaerat molestiae, et illum. Consequuntur
+                                quibusdam consequatur neque exercitationem
+                                corruptiVel architecto harum hic exercitationem
+                                molestiae consequatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-card" id="job5">
+                        <div class="job-card-cover">
+                            <p class="job-card-title">Projeto 5</p>
+                            <p class="job-card-description">
+                                Quaerat molestiae, et illum. Consequuntur
+                                quibusdam consequatur neque exercitationem
+                                corruptiVel architecto harum hic exercitationem
+                                molestiae consequatur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
 
-  <!-- Cabeçalho-->
-  <header class="main-banner">
-    <div class="nav-container">
-      <a href="#" class="brand"><i class="fas fa-brain">Agency</i></a>
-      <nav class="nav-bar">
-        <ul class="nav-container-navbar">
-          <li> <a href="#">Home</a></li>
-          <li> <a href="#">Serviços</a></li>
-          <li> <a href="#">Contato</a></li>
-          <li> <a href="#" class="btn btn-primary">Entrar</a></li>
-          <li> <a href="#" class="btn">Registrar</a></li>
-        </ul>
-      </nav>
-      <a class="btn-mobile" href=""><i class="fas fa-bars"></i></a>  
-    </div>
-    <div class="title-container">
-      <h2>Nós desenvolvemos</h2>
-      <h1>Poderosas experiências</h1>
-      <a href="#" class="btn btn-primary btn-rounded">Fazer Orçamento</a>
-    </div>
-  </header>
-  <!-- Serviços -->
-  <main class="services-container">
-    <h2>O que fazemos</h2>
-    <div class="services-card-container">
-      <div class="services-card">
-        <i class="fab fa-buffer"></i>
-        <h3>Desenvolvimento Fullsatck</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea eligendi placeat rerum reiciendis esse totam quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corrupti officiis .</p>
-      </div>
-      <div class="services-card">
-        <i class="fas fa-bolt"></i>
-        <h3>Sites leves e rápidos</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea eligendi placeat rerum reiciendis esse totam quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corrupti officiis .</p>
-      </div>
-      <div class="services-card">
-        <i class="fas fa-cart-plus"></i>
-        <h3>E-commerce</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea eligendi placeat rerum reiciendis esse totam quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corrupti officiis .</p>
-      </div>
-      <div class="services-card">
-        <i class="fas fa-chart-line"></i>
-        <h3>SEO</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea eligendi placeat rerum reiciendis esse totam quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corrupti officiis .</p>
-      </div>
-      <div class="services-card">
-        <i class="fas fa-chess-pawn"></i>
-        <h3>Estratégia de Marketing</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea eligendi placeat rerum reiciendis esse totam quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corrupti officiis .</p>
-      </div>
-      <div class="services-card">
-        <i class="fas fa-cloud"></i>
-        <h3>Hospedagem AWS/Azure</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius ea eligendi placeat rerum reiciendis esse totam quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corrupti officiis .</p>
-      </div>
-    </div>
-    <a href="#" class="btn btn-primary btn-rounded">Veja todos os serviços</a>
-  </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-desk-container">
+                    <h3>Agency</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Dolores molestiae officia ipsa perferendis velit
+                        adipisicing elit. Nihil nemo recusandae delectus natus
+                        quae voluptatibus, aperiam sed porro rem. Totam impedit
+                        vitae excepturi saepe laborum a. Illum porro doloribus
+                        atque.
+                    </p>
+                </div>
+                <div class="footer-links-container">
+                    <div class="footer-links-container-list">
+                        <p class="footer-title">Links</p>
+                        <ul>
+                            <li><a href="#">Base de conhecimentos</a></li>
+                            <li><a href="#">Trabalhe cosnosco</a></li>
+                            <li><a href="#">Ùltimos Projetos</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-container-list">
+                        <p class="footer-title">Links</p>
+                        <ul>
+                            <li><a href="#">Base de conhecimentos</a></li>
+                            <li><a href="#">Trabalhe cosnosco</a></li>
+                            <li><a href="#">Ùltimos Projetos</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-container-list">
+                        <p class="footer-title">Links</p>
+                        <ul>
+                            <li><a href="#">Base de conhecimentos</a></li>
+                            <li><a href="#">Trabalhe cosnosco</a></li>
+                            <li><a href="#">Ùltimos Projetos</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-copy-container">
+                    <p>
+                        &copy; 2021 Agency - A melhor agência web para seus
+                        projetos lorem
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+        </footer>
 
-  <!-- Jobs-->
-  <section class="jobs-container">
-    <h2>Algum de nossos trabalhos</h2>
-    <div class="jobs-list">
-      <div class="first-job" id="job1">
-        <div class="job-card-cover">
-          <p class="job-card-title">
-            Projeto 1
-          </p>
-          <p class="job-card-description">
-            Lorem ipsum dolor sit amet consectetur quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corrupti adipisicing elit. 
-          </p>
-        </div>
-      </div>
-      <div class="other-jobs-container">
-        <div class="job-card" id="job2">
-          <div class="job-card-cover">
-          <p class="job-card-title">
-            Projeto 2 
-          </p>
-          <p class="job-card-description">
-              Quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corruptiVel architecto harum hic exercitationem molestiae consequatur.
-          </p>
-          </div>
-        </div>
-        <div class="job-card" id="job3">
-          <div class="job-card-cover">
-          <p class="job-card-title">
-            Projeto 3
-          </p>
-          <p class="job-card-description">
-              Quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corruptiVel architecto harum hic exercitationem molestiae consequatur.
-          </p>
-          </div>
-        </div>
-        <div class="job-card" id="job4">
-          <div class="job-card-cover">
-          <p class="job-card-title">
-            Projeto 4
-          </p>
-          <p class="job-card-description">
-             Quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corruptiVel architecto harum hic exercitationem molestiae consequatur.
-          </p>
-          </div>
-        </div>
-        <div class="job-card" id="job5">
-          <div class="job-card-cover">
-          <p class="job-card-title">
-            Projeto 5 
-          </p>
-          <p class="job-card-description">
-              Quaerat molestiae, et illum. Consequuntur quibusdam consequatur neque exercitationem corruptiVel architecto harum hic exercitationem molestiae consequatur.
-          </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Footer -->
-
-    <footer>
-      <div class="footer-container">
-        <div class="footer-desk-container">
-          <h3>Agency</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Dolores molestiae officia ipsa perferendis velit  adipisicing elit. 
-            Nihil nemo recusandae delectus natus quae voluptatibus, aperiam sed porro rem. Totam impedit vitae excepturi saepe laborum a. Illum porro doloribus atque.
-          </p>
-        </div>
-        <div class="footer-links-container">
-          <div class="footer-links-container-list">
-            <p class="footer-title">Links</p>
-            <ul>
-              <li><a href="#">Base de conhecimentos</a></li>
-              <li><a href="#">Trabalhe cosnosco</a></li>
-              <li><a href="#">Ùltimos Projetos</a></li>
-              <li><a href="#">Política de privacidade</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-          </div>
-          <div class="footer-links-container-list">
-            <p class="footer-title">Links</p>
-            <ul>
-              <li><a href="#">Base de conhecimentos</a></li>
-              <li><a href="#">Trabalhe cosnosco</a></li>
-              <li><a href="#">Ùltimos Projetos</a></li>
-              <li><a href="#">Política de privacidade</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-          </div>
-          <div class="footer-links-container-list">
-            <p class="footer-title">Links</p>
-            <ul>
-              <li><a href="#">Base de conhecimentos</a></li>
-              <li><a href="#">Trabalhe cosnosco</a></li>
-              <li><a href="#">Ùltimos Projetos</a></li>
-              <li><a href="#">Política de privacidade</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-copy-container">
-          <p>&copy; 2021 Agency - A melhor agência web para seus projetos lorem</p>
-          <p></p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
+        <script src="js/script.js"></script>
+    </body>
 </html>

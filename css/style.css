@@ -114,7 +114,11 @@ li {
   line-height: 1.4;
   color: #fff;
   display: none;
-  display: block;
+}
+@media (max-width: 720px) {
+  .nav-container .btn-mobile {
+    display: block;
+  }
 }
 @media (max-width: 720px) {
   .nav-container nav {

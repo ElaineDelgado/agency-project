@@ -7,3 +7,4 @@ function handleClick(event) {
   mobileMenu.classList.toggle('active')
 }
 btnMenu.addEventListener('click', handleClick)
+  
